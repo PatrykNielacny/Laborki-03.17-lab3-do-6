@@ -91,3 +91,17 @@ if(zadanie == "zadanie6"):
   print(listWord)
   lambdaresult = lambda x: listWord[0] + listWord[1] + listWord[2] + listWord[3] + listWord[4] + listWord[5]
   print(lambdaresult(listWord))
+if(zadanie == "zadanie7"):
+  i = 0
+  zmienna = "Patryk Niełacny"
+  x = lambda x : zmienna.split(' ')
+  print(x(zmienna))
+  y = lambda y : print(list(y))
+  print(y(zmienna))
+if(zadanie == "zadanie8"):
+  print("Podaj słowo: ")
+  slowo = input()
+  print("Podaj litere: ")
+  litera = input()
+  x = lambda x,y : litera in slowo and print(slowo.find(litera))
+  print(x(litera,slowo))
